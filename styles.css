@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color:  #eff9fc;
+}
+
+aside {
+    display: grid;
+    grid-template-rows: repeat(12, 4rem);
+    grid-row: 1 / -1;
+    background-color: #312e81;
+    color: white;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.50rem;
+    padding-top: 0.50rem;
+    gap: 10px;
+    border-bottom: white solid 3px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 10px;
+    border-bottom: 2px white solid;
+    padding: 1.50rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+a:hover, a:focus {
+    background-color: #1e1b4b;
+    outline: none;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-column: 2 / -1;
+    box-shadow: 11px 0px 25px 6px rgba(0,0,0,0.3);
+    background-color: white;
+}
+
+input {
+    border: lightgray solid 1px;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 30rem;
+    background-color: #eff9fc;
+    outline: 1px black;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+input:focus, input:hover {
+    background-color: white;
+}
+
+.top-header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+
+.notifications-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottom-header {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.user {
+    text-align: start;
+}
+
+.bottom-header > :first-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.bottom-header > :nth-child(2) {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    border: none;
+    background-color: #312e81;
+    color: white;
+    padding: 1rem;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+main {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 1rem;
+    overflow: auto;
+    gap: 10px;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.projects > p {
+    grid-column: 1 / -1;
+    text-align: start;
+}
+
+h2 {
+    background-color: #312e81;
+    border-radius: 10px 10px 0 0 ;
+    color: white;
+    text-align: start;
+    padding: 10px;
+}
+
+p {
+    flex: 1;
+    text-align: start;
+    padding: 5px;
+}
+
+.icons {
+    padding: 10px;
+    text-align: end;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+
+.right-section {
+    display: grid;
+    grid-template-rows: auto 1fr auto 1fr;
+    gap: 10px;
+}
+
+.ann-card {
+    background-color: white;
+    border-radius: 15px;
+    border: solid rgb(0, 0, 0) 2px;
+}
+
+h3 {
+    text-align: start;
+    padding: 5px 0 0 5px;
+    margin: 0;
+}
+
+.ann-card > p {
+    font-size: smaller;
+}
+
+.trend-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    border: solid rgb(0, 0, 0) 2px;
+    justify-content: center;
+    align-items: center;
+}
+
